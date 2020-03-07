@@ -80,7 +80,7 @@
                         @csrf
                         <input type="hidden" name="_method" value="DELETE">
                         <input type="hidden" value="{{$m['nama']}}" name="name">
-                        <input type="submit" value="Hapus">
+                        <input type="submit" value="Hapus" onclick="return alert('Apakah anda yakin?')">
                     </form>
                 </tr>
             @endforeach
